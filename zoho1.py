@@ -1,17 +1,17 @@
 a = input("Enter the string:")
-count_a = 0
-count_b = 0
+open_braces = 0
+close_braces = 0
 
 for hari in a:
     if hari == "(":
-        count_a += 1
+        open_braces += 1
     elif hari == ")":
-        count_b += 1
+        close_braces += 1
     else:
-        continue
-if count_a == count_b:
-    print("Open braces=",count_a,"Close braces=",count_b)
+        pass
+if open_braces == close_braces:
+    print("Open braces=",open_braces,"Close braces=",close_braces)
     print("Balanced")
 else:
-    print("Open braces=",count_a,"Close braces=",count_b)
+    print("Open braces=",open_braces,"Close braces=",close_braces)
     print("Not balanced")
